@@ -16,7 +16,7 @@
     $aleatorio = $respuestas[array_rand($respuestas)];
     echo "<br>";
     echo "Respuesta: " . $aleatorio;
-
+    
     ?>
 </body>
 </html>
