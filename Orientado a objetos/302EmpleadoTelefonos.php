@@ -4,12 +4,19 @@ class Empleado
     public string $nombre;
     public string $apellido;
     public float $sueldo;
+    public array $telefonos;
 
-    public function __construct(string $nombre, string $apellido, float $sueldo)
+    public function __construct(string $nombre, string $apellido, float $sueldo, array $telefonos)
     {
         $this->nombre = $nombre;
         $this->apellido = $apellido;
         $this->sueldo = $sueldo;
+         $this->telefonos = $telefonos;
+    }
+
+      public function setTelefono(string $tel)
+    {
+        $this->telefonos[] = $tel;
     }
 
     public function setNombre(string $nom)
@@ -25,6 +32,11 @@ class Empleado
     public function setSueldo(float $suel)
     {
         $this->sueldo = $suel;
+    }
+
+     public function getTelefonos(): string
+    {
+        return implode(', ', $this->telefonos);
     }
 
     public function getNombre(): string
@@ -50,6 +62,19 @@ class Empleado
     function debePagarImpuestos(): bool
     {
         return $this->sueldo > 3333;
+    }
+
+    public function anyadirTelefono(int $telefono) : void {
+        $this->telefonos[] = $telefono;
+    }
+
+    public function listarTelefonos(): string {
+        return implode(', '. $this->telefonos);
+
+    }
+
+    public function vaciarTelefonos(): void {
+        $this->telefonos = [];
     }
 }
 
