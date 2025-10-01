@@ -1,5 +1,5 @@
 <?php
-class Persona
+abstract class Persona
 {
     public string $nombre;
     public string $apellido;
@@ -33,19 +33,8 @@ class Persona
         return $this->nombre . ' ' . $this->apellido;
     }
 
-      public static function toHtml(Persona $p) {
-        if ($p instanceof Empleado) {  
-        $html = "<p>Nombre: " . $p->getNombreCompleto() . "</p>";
-        $html .= "<p>Sueldo: " . $p->getSueldo() . "</p>";
-        $html .= "<p>Teléfonos:</p>";
-        $html .= "<ol>";
-        foreach ($p->getTelefonos() as $telefono) {
-            $html .= "<li>" . $telefono . "</li>";
-        }
-        $html .= "</ol>";
-        return $html;
-        }
-    }
+      abstract public function toHtml(); 
+    
 
    public function __toString() : string {
     $toString = "<p>Nombre Completo: " . $this->getNombreCompleto() . "</p>";
