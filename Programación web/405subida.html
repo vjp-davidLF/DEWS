@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subida</title>
+</head>
+<body>
+    <!-- Formulario para subir imagen con campos de anchura y altura -->
+    <form action="405subidaImagen.php" method="post" enctype="multipart/form-data">
+        <!-- Campo para seleccionar archivo de imagen -->
+        <label for="archivo">Archivo:</label>
+        <br><input type="file" name="archivo" id="archivo" required></br>
+
+        <!-- Campo numérico para anchura de la imagen -->
+        <label for="anchura">Anchura</label>
+        <br><input type="number" name="anchura" id="anchura" required></br>
+
+        <!-- Campo numérico para altura de la imagen -->
+        <label for="altura">Altura</label>
+        <br><input type="number" name="altura" id="altura" required></br>
+
+        <!-- Botón para enviar el formulario -->
+        <br><input type="submit" value="Subir"></br>
+    </form>
+</body>
+</html>
