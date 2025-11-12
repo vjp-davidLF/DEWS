@@ -1,0 +1,17 @@
+{
+    "name": "monologo/monologo",
+    "autoload": {
+        "psr-4": {
+            "Monolog\\Monolog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "vjp-davidLF",
+            "email": "dlopezf03@informatica.iesvalledeljerteplasencia.es"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^3.9"
+    }
+}
