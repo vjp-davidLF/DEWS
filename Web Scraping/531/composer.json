@@ -1,0 +1,17 @@
+{
+    "name": "dlopezf03/531",
+    "autoload": {
+        "psr-4": {
+            "Dlopezf03\\531\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "vjp-davidLF",
+            "email": "dlopezf03@informatica.iesvalledeljerteplasencia.es"
+        }
+    ],
+    "require": {
+        "fabpot/goutte": "^4.0"
+    }
+}

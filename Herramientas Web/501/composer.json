@@ -1,8 +1,8 @@
 {
-    "name": "monologo/monologo",
+    "name": "dlopezf03/501",
     "autoload": {
         "psr-4": {
-            "Monolog\\Monolog\\": "src/"
+            "Dlopezf03\\501\\": "src/"
         }
     },
     "authors": [
@@ -12,6 +12,6 @@
         }
     ],
     "require": {
-        "monolog/monolog": "^3.9"
+        "fabpot/goutte": "^4.0"
     }
 }
